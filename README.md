@@ -1,79 +1,37 @@
 # COLORS
 
-# Better colors for the web.
+This is an iOS-flavored fork of [clrs.cc](http://clrs.cc "Colors: Redefining the default web colors."), implemented as an Objective-C category so iOS developers can use these colors easily.
 
-View the project page at [http://clrs.cc](http://clrs.cc "Colors: Redefining the default web colors.")
+# Better colors for your prototypes.
+
+View the original project page at [http://clrs.cc](http://clrs.cc "Colors: Redefining the default web colors.")
 
 # What is this?
 
-A simple color palette for the web. Out of the box, the color strings that css provides aren't... the tops.
-This is a set of sass variables and css classes that should help fix that.
+(To paraphrase clrs.cc): this is a simple color palette for your apps. Out of the box, the standard iOS colors (blueColor, redColor, greenColor, etc) aren't... the tops. This is an Objective-C category that should help fix that.
 
 ## Getting started
 
-* Grab a copy of the code by downloading the zip from this page - or cloning/forking the repo.
-```bash
-git clone git@github.com:mrmrs/colors.git
-```
+Drag these two files into your project:
+UIColors+Colors.h
+UIColors+Colors.m
 
-### Using the css
-Simply copy colors.css to your css directory and include the file like so in the head of your html document
+...then, anywhere you'd like to reference these colors, import the color palette like so:
 
-``` <link rel="stylesheet" href="css/colors.css"> ```
+#import "UIColor+Colors.h"
 
-### Using the Sass
-The sass source can be found in a folder I creatively titled "sass."
-Include any or all of the three partials to your project like you would any other
-sass partials. But just for reference...
-
-```
-@import "variables";
-@import "skins";
-@import "links";
-```
-
-### Using the Stylus
-You an also edit the source code as stylus.
-Include, exclude, or modify the partials to your hearts content.
-
-## Directory structure
-```
-  colors/
-        ├── README.md
-        ├── Rakefile
-        ├── index.html
-        ├── css
-        │   └── colors.css
-        │   └── colors.min.css
-        ├── sass                  (CSS Source)
-            ├── _variables.scss
-            ├── _skins.scss
-            ├── _links.scss
-            ├── colors.scss
-        ├── stylus                (CSS Source)
-            ├── variables.styl
-            ├── skins.styl
-            ├── links.styl
-            ├── colors.styl
-```
-
-## Rake tasks
-
-Start sass development
-```bash
-rake sass
-```
-
-Start sass - output is minified
-```bash
-rake minify
-```
+...and now you can access these colors like so:
+self.view.backgroundColor = [UIColor betterOliveColor];
+self.titleLabel.textColor = [UIColor betterBlackColor];
 
 # Author
+Original author & creator of the palette:
 [MRMRS](http://mrmrs.cc "Adam Morse - Designer + Developer in SF")
 
+Author of the objective-c code here:
+[bryanjclark](http://bryanjclark.com "Bryan Clark - iOS Designer & Developer in Seattle")
 
-# License
+# License (for @mrmrs)
 
 The MIT License (MIT)
 
@@ -96,4 +54,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
