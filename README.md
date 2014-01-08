@@ -13,16 +13,46 @@ View the original project page at [http://clrs.cc](http://clrs.cc "Colors: Redef
 ## Getting started
 
 Drag these two files into your project:
+
+```
 UIColors+Colors.h
 UIColors+Colors.m
+```
 
 ...then, anywhere you'd like to reference these colors, import the color palette like so:
 
+```
 #import "UIColor+Colors.h"
+```
 
 ...and now you can access these colors like so:
+
+```
 self.view.backgroundColor = [UIColor betterOliveColor];
 self.titleLabel.textColor = [UIColor betterBlackColor];
+```
+
+Here's the full list of color names:
+
+```
+clrs_navyColor
+clrs_blueColor
+clrs_aquaColor
+clrs_tealColor
+clrs_oliveColor
+clrs_greenColor
+clrs_limeColor
+clrs_yellowColor
+clrs_orangeColor
+clrs_redColor
+clrs_fuchsiaColor
+clrs_purpleColor
+clrs_maroonColor
+clrs_whiteColor
+clrs_silverColor
+clrs_grayColor
+clrs_blackColor
+```
 
 # Author
 Original author & creator of the palette:
