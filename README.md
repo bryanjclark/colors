@@ -4,7 +4,7 @@ This is an iOS-flavored fork of [clrs.cc](http://clrs.cc "Colors: Redefining the
 
 # Better colors for your iOS prototypes.
 
-![iOS screenshot](http://f.cl.ly/items/1u0B2F2T0C0R2G3V1a0T/colors_screenshot.png)
+![iOS screenshot](http://f.cl.ly/items/1y0h433a3q2c1O2x0F0S/colors_screenshot%20small.png)
 
 View the original project page at [http://clrs.cc](http://clrs.cc "Colors: Redefining the default web colors.")
 
