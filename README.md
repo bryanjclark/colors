@@ -2,7 +2,7 @@
 
 This is an iOS-flavored fork of [clrs.cc](http://clrs.cc "Colors: Redefining the default web colors."), implemented as an Objective-C category so iOS developers can use these colors easily.
 
-# Better colors for your prototypes.
+# Better colors for your iOS prototypes.
 
 View the original project page at [http://clrs.cc](http://clrs.cc "Colors: Redefining the default web colors.")
 
